@@ -3,6 +3,7 @@ package com.bluetooth;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.polidea.reactnativeble.BlePackage;
  import com.reactnativenavigation.NavigationApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -24,7 +25,7 @@ public class MainApplication extends NavigationApplication {
           // Add additional packages you require here
           // No need to add RnnPackage and MainReactPackage
           return Arrays.<ReactPackage>asList(
-
+                new BlePackage()
           );
       }
 
