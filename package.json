@@ -12,7 +12,8 @@
     "react-native": "0.45.1",
     "react-native-animatable": "^1.2.2",
     "react-native-ble-plx": "^0.6.0",
-    "react-native-navigation": "^1.1.112"
+    "react-native-navigation": "^1.1.112",
+    "react-native-viewpager": "^0.2.13"
   },
   "devDependencies": {
     "babel-jest": "20.0.3",
