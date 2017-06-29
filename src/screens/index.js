@@ -21,6 +21,9 @@ import CardsInfo from './transitions/sharedElementTransitions/Cards/Info';
 
 import Masonry from './transitions/sharedElementTransitions/Masonry/Masonry';
 import MasonryItem from './transitions/sharedElementTransitions/Masonry/Item';
+import SquarePage from './square/SquarePage';
+
+
 
 export default function () {
   Navigation.registerComponent('example.Types', () => Types);
@@ -43,4 +46,5 @@ export default function () {
   Navigation.registerComponent('example.Transitions.SharedElementTransitions.Cards.Info', () => CardsInfo);
   Navigation.registerComponent('example.Transitions.SharedElementTransitions.Masonry', () => Masonry);
   Navigation.registerComponent('example.Transitions.SharedElementTransitions.Masonry.Item', () => MasonryItem);
+  Navigation.registerComponent('example.SquarePage',()=>SquarePage)
 }
