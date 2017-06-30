@@ -131,7 +131,8 @@ const styles = StyleSheet.create({
     },
     txtNum: {
         fontSize: 12,
-        color: 'white'
+        color: 'white',
+        marginLeft: 5
     }
 
 })
