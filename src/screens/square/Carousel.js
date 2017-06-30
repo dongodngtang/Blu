@@ -26,9 +26,18 @@ export default class Carousel extends Component {
                 pageInfo
                 onAnimateNextPage={p => console.log(p)}>
 
-                <View style={{backgroundColor: '#BADA55',  flex: 1}}><Text>1</Text></View>
-                <View style={{backgroundColor: 'red', flex: 1}}><Text>2</Text></View>
-                <View style={{backgroundColor: 'blue', flex: 1}}><Text>3</Text></View>
+                <View style={{backgroundColor: '#BADA55',  flex: 1}}>
+                    <Image style={{height:120}}
+                    source={{uri:'http://img1.3lian.com/2015/a1/144/d/69.jpg'}}/>
+                </View>
+                <View style={{backgroundColor: 'red', flex: 1}}>
+                    <Image style={{height:120}}
+                           source={{uri:'http://img17.3lian.com/d/file/201702/20/b1b95fd7b88f9c3c08985ee4c3ecd9dc.jpg'}}/>
+                </View>
+                <View style={{backgroundColor: 'blue', flex: 1}}>
+                    <Image style={{height:120}}
+                           source={{uri:'http://img.taopic.com/uploads/allimg/110727/1819-110HG5512219.jpg'}}/>
+                </View>
 
             </Carousels>)
 

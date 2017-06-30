@@ -43,7 +43,7 @@ export default class HotMoment extends Component {
                 <Image
                     resizeMode='cover'
                     style={styles.img}
-                    source={Images.hunter}/>
+                    source={ {uri: 'http://img1.imgtn.bdimg.com/it/u=909890657,2585935063&fm=214&gp=0.jpg'}}/>
             </View>
 
 
@@ -94,8 +94,7 @@ const styles = StyleSheet.create({
     img: {
         height: 127,
         width: 170,
-        borderTopLeftRadius: 5,
-        borderTopRightRadius: 5,
+        borderRadius: 5
 
     },
     title: {

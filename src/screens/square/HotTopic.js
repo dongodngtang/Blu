@@ -42,7 +42,7 @@ export default class HotTopic extends Component {
         return (<View style={styles.item}>
             <Image
                 style={styles.img}
-                source={{uri: ''}}/>
+                source={{uri: 'http://img.zcool.cn/community/014026568b7bcc6ac725bb5c65e529.jpg@900w_1l_2o_100sh.jpg'}}/>
 
             <Text style={styles.title}>#为爱同行求组队#</Text>
         </View>)
