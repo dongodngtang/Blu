@@ -10,27 +10,28 @@ import {
     Image,
     Text
 } from 'react-native';
-import {PagerDotIndicator,IndicatorViewPager} from 'rn-viewpager';
+import {PagerDotIndicator, IndicatorViewPager} from 'rn-viewpager';
+import Carousels from 'react-native-looped-carousel';
 
 export default class Carousel extends Component {
 
 
     render() {
-        return (<IndicatorViewPager
-            style={{backgroundColor: 'white', height: 120}}
-            indicator={this._renderDotIndicator()}>
 
-            <View style={{backgroundColor: 'cadetblue'}}>
-                <Text>page one</Text>
-            </View>
-            <View style={{backgroundColor: 'cornflowerblue'}}>
-                <Text>page two</Text>
-            </View>
-            <View style={{backgroundColor: '#1AA094'}}>
-                <Text>page three</Text>
-            </View>
+        return (
+            <Carousels
+                delay={2000}
+                style={{height: 120}}
+                autoplay
+                pageInfo
+                onAnimateNextPage={p => console.log(p)}>
 
-        </IndicatorViewPager>)
+                <View style={{backgroundColor: '#BADA55',  flex: 1}}><Text>1</Text></View>
+                <View style={{backgroundColor: 'red', flex: 1}}><Text>2</Text></View>
+                <View style={{backgroundColor: 'blue', flex: 1}}><Text>3</Text></View>
+
+            </Carousels>)
+
     }
 
     _renderDotIndicator() {

@@ -47,7 +47,32 @@ export default class HotMoment extends Component {
             </View>
 
 
-            <Text style={styles.title}>#为爱同行求组队#</Text>
+            <Text
+                numberOfLines={2}
+                style={[styles.txtCard, {padding: 10, lineHeight: 20}]}>了卡技术的俩说了爱上大陆架法老师的法律界卡收到两份 交了</Text>
+
+            <View style={styles.viewLike}>
+                <Image
+                    source={Images.up}
+                    style={styles.imgLike}
+                />
+                <Text style={styles.txtNum}>32</Text>
+                <Image
+                    source={Images.comment}
+                    style={[styles.imgLike, {marginLeft: 44}]}
+                />
+                <Text style={styles.txtNum}>32</Text>
+            </View>
+
+            <View style={[styles.viewLike, {
+                marginTop: 10
+            }]}>
+                <Image
+                    source={Images.avatar}
+                    style={styles.imgAvatar}/>
+                <Text style={styles.txtCard}>健康传奇</Text>
+            </View>
+
         </View>)
     }
 }
@@ -69,22 +94,45 @@ const styles = StyleSheet.create({
     img: {
         height: 127,
         width: 170,
-        borderRadius:5
+        borderTopLeftRadius: 5,
+        borderTopRightRadius: 5,
 
     },
     title: {
         fontSize: 14,
         color: 'white',
-        marginTop: 5,
-        padding: 8
+        padding: 10
     },
     item: {
         borderRadius: 5,
-        backgroundColor: 'green',
+        backgroundColor: '#1B1E27',
         marginRight: 11,
         marginVertical: 8,
-        height: 240,
-        width: 170,
+        height: 250,
+        width: 170
+    },
+    imgLike: {
+        width: 13,
+        height: 13
+    },
+    viewLike: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginLeft: 10
+    },
+    imgAvatar: {
+        height: 25,
+        width: 25,
+        borderRadius: 12.5,
+        marginRight: 5
+    },
+    txtCard: {
+        fontSize: 12,
+        color: '#707888'
+    },
+    txtNum: {
+        fontSize: 12,
+        color: 'white'
     }
 
 })
